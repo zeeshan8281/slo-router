@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="335" viewBox="0 0 900 335">
+<rect width="100%" height="100%" fill="#0b1020"/>
+<style>text{font-family:ui-monospace,monospace;fill:#e5e7eb;font-size:12px}.h{font-size:16px;font-weight:bold}.a{fill:#34d399}.l{fill:#60a5fa}.c{fill:#f59e0b}</style>
+<text x="20" y="28" class="h">SLO Router replay: quality, p95 latency, predicted cost</text>
+<text x="220" y="55">accuracy</text><text x="470" y="55">p95 latency</text><text x="720" y="55">cost</text>
+<text x="20" y="94">fixed_cheapest</text>
+<rect class="a" x="220" y="80" width="125.0" height="18"/><text x="425" y="94">0.625</text>
+<rect class="l" x="470" y="80" width="4.7" height="18"/><text x="645" y="94">35.6ms</text>
+<rect class="c" x="720" y="80" width="12.0" height="18"/><text x="845" y="94">$0.000131</text>
+<text x="20" y="139">fixed_strongest</text>
+<rect class="a" x="220" y="125" width="200.0" height="18"/><text x="425" y="139">1.000</text>
+<rect class="l" x="470" y="125" width="9.1" height="18"/><text x="645" y="139">69.5ms</text>
+<rect class="c" x="720" y="125" width="120.0" height="18"/><text x="845" y="139">$0.001314</text>
+<text x="20" y="184">quality_only</text>
+<rect class="a" x="220" y="170" width="200.0" height="18"/><text x="425" y="184">1.000</text>
+<rect class="l" x="470" y="170" width="170.0" height="18"/><text x="645" y="184">1296.3ms</text>
+<rect class="c" x="720" y="170" width="78.6" height="18"/><text x="845" y="184">$0.000860</text>
+<text x="20" y="229">slo_no_jev</text>
+<rect class="a" x="220" y="215" width="200.0" height="18"/><text x="425" y="229">1.000</text>
+<rect class="l" x="470" y="215" width="10.2" height="18"/><text x="645" y="229">77.9ms</text>
+<rect class="c" x="720" y="215" width="65.0" height="18"/><text x="845" y="229">$0.000712</text>
+<text x="20" y="274">slo</text>
+<rect class="a" x="220" y="260" width="200.0" height="18"/><text x="425" y="274">1.000</text>
+<rect class="l" x="470" y="260" width="64.3" height="18"/><text x="645" y="274">490.4ms</text>
+<rect class="c" x="720" y="260" width="78.6" height="18"/><text x="845" y="274">$0.000860</text>
+</svg>

@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+traces.jsonl
+matrix*.jsonl
+replay*.jsonl
+config.fitted.json
+fit-report.json
+benchmark-report.md
+benchmark-report.svg
+.gstack/

@@ -1,0 +1,37 @@
+{
+  "backends": [
+    {
+      "name": "fast",
+      "url": "http://127.0.0.1:8101",
+      "model": "fast-model",
+      "input_per_million": 0.10,
+      "output_per_million": 0.20,
+      "max_context_tokens": 8192,
+      "prefill_tokens_per_second": 3000,
+      "decode_tokens_per_second": 100,
+      "base_latency_ms": 25,
+      "metrics_url": "http://127.0.0.1:8101/metrics",
+      "quality": {"extraction": 0.92, "summarization": 0.87, "reasoning": 0.62, "code_debugging": 0.51, "other": 0.7}
+    },
+    {
+      "name": "strong",
+      "url": "http://127.0.0.1:8102",
+      "model": "strong-model",
+      "input_per_million": 1.0,
+      "output_per_million": 2.0,
+      "max_context_tokens": 32768,
+      "prefill_tokens_per_second": 4500,
+      "decode_tokens_per_second": 70,
+      "base_latency_ms": 45,
+      "metrics_url": "http://127.0.0.1:8102/metrics",
+      "quality": {"extraction": 0.98, "summarization": 0.97, "reasoning": 0.91, "code_debugging": 0.93, "other": 0.9}
+    }
+  ],
+  "default_slo_ms": 10000,
+  "default_quality_floor": 0.7,
+  "slo_success_floor": 0.8,
+  "jev_timeout_ms": 700,
+  "jev_input_per_million": 0.042,
+  "jev_cache_ttl_seconds": 300,
+  "trace_path": "traces.jsonl"
+}

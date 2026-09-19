@@ -1,0 +1,8 @@
+{"arrival_ms":0,"task":"reasoning","messages":[{"role":"user","content":"What is 2+2?"}],"reference":"4","slo_ms":10000}
+{"arrival_ms":10,"task":"extraction","messages":[{"role":"user","content":"Extract the color from: the car is blue."}],"reference":"blue","slo_ms":10000}
+{"arrival_ms":20,"task":"summarization","messages":[{"role":"user","content":"Summarize: Alice moved to Paris on Tuesday."}],"reference":"Alice moved to Paris.","slo_ms":10000}
+{"arrival_ms":30,"task":"code_debugging","messages":[{"role":"user","content":"Why does a CUDA barrier inside a divergent branch deadlock?"}],"reference":"Some threads never reach the barrier.","slo_ms":10000}
+{"arrival_ms":40,"task":"reasoning","messages":[{"role":"user","content":"Explain why a cache key must include the tenant."}],"reference":"It prevents cross-tenant cache reuse.","slo_ms":10000}
+{"arrival_ms":50,"task":"extraction","messages":[{"role":"user","content":"Extract the city from: Bob lives in Rome."}],"reference":"Rome","slo_ms":10000}
+{"arrival_ms":60,"task":"reasoning","messages":[{"role":"user","content":"What is 9*7?"}],"reference":"63","slo_ms":10000}
+{"arrival_ms":70,"task":"summarization","messages":[{"role":"user","content":"Summarize: The service restarted after memory exhaustion."}],"reference":"The service restarted after OOM.","slo_ms":10000}

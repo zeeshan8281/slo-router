@@ -1,0 +1,44 @@
+{
+  "jev_calls": 16,
+  "feature_latency_p50_ms": 453.583,
+  "feature_latency_p95_ms": 1257.503,
+  "jev_input_cost_usd": 0.00029652,
+  "fallbacks": 0,
+  "task_disagreements_slo_vs_no_jev": [
+    {
+      "prompt_sha256": "55e9f56e0537",
+      "local": "code_debugging",
+      "jev": "reasoning"
+    },
+    {
+      "prompt_sha256": "575f07a7f0d0",
+      "local": "reasoning",
+      "jev": "other"
+    },
+    {
+      "prompt_sha256": "aea8acaaea94",
+      "local": "reasoning",
+      "jev": "other"
+    }
+  ],
+  "jev_exactness": [
+    0.65,
+    0.79,
+    0.8,
+    0.86,
+    0.88,
+    0.9,
+    0.93,
+    0.94
+  ],
+  "jev_external_evidence": [
+    0.02,
+    0.02,
+    0.02,
+    0.02,
+    0.03,
+    0.03,
+    0.05,
+    0.08
+  ]
+}
