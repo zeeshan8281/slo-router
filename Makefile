@@ -1,4 +1,4 @@
-.PHONY: test sim-fast sim-strong serve matrix fit replay report video-demo
+.PHONY: test sim-fast sim-strong serve matrix fit replay report video-demo experiment-sweeps
 
 test:
 	python3 -m pytest -q
@@ -26,3 +26,6 @@ report:
 
 video-demo:
 	./scripts/video-demo.sh
+
+experiment-sweeps:
+	./scripts/experiment-sweeps.sh

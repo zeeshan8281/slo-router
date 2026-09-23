@@ -1,7 +1,7 @@
 # SLO Router
 
 <p align="center">
-  <strong>Route each LLM request to the cheapest backend that can answer correctly within its latency SLO.</strong>
+  <strong>Route each request to the lowest-cost backend whose configured quality and estimated latency clear its SLO.</strong>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@ The repository is standalone. The bundled simulated backends let the complete pr
 
 Ten labeled extraction requests arrive simultaneously with a 400 ms SLO. The cheap backend has one execution slot; the higher-cost capacity backend has sixteen. Both return identical correct answers, isolating queue-aware routing from model-quality differences. Five independent runs produced the same route distribution and SLO-success rate.
 
-| Policy | Accuracy | SLO success | Median p95 across 5 runs | Predicted cost | Route distribution |
+| Policy | Accuracy | SLO success | Median p95 across 5 runs | Configured token-cost estimate | Route distribution |
 | --- | ---: | ---: | ---: | ---: | --- |
 | Fixed cheapest | 100% | 40% | 833.69 ms | $0.0000530 | cheap 10 |
 | Fixed strongest | 100% | 100% | 112.78 ms | $0.0005300 | capacity 10 |
@@ -34,7 +34,7 @@ SLO-aware routing increased deadline success from 40% to 100% while costing 36% 
 
 Eight labeled requests were replayed through the real OpenRouter Decisions endpoint using `typesafe/jev-1.13`, with deterministic local completion backends. This measures Jev integration overhead and routing effects; it does not claim real-model quality.
 
-| Policy | Feature path | Accuracy | p50 end-to-end | p95 end-to-end | Predicted cost | Routes |
+| Policy | Feature path | Accuracy | p50 end-to-end | p95 end-to-end | Configured token-cost estimate | Routes |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
 | Fixed cheapest | Local | 62.5% | 28.58 ms | 35.64 ms | $0.00013140 | fast 8 |
 | Fixed strongest | Local | 100% | 69.23 ms | 69.47 ms | $0.00131400 | strong 8 |
@@ -43,6 +43,22 @@ Eight labeled requests were replayed through the real OpenRouter Decisions endpo
 | SLO-aware + Jev | Live Jev | 100% | 436.99 ms | 490.38 ms | $0.00086016 | fast 4 / strong 4 |
 
 All 16 Jev decision calls succeeded without lexical fallback, but Jev did not change a route on this fixture and increased SLO-aware p95 latency by about 6.3×. The measured production baseline is therefore local SLO routing; synchronous Jev remains experimental until a real workload shows a quality gain large enough to justify its latency. See the [full live Jev analysis](results/live-jev-analysis.md) and [raw replay](results/live-jev-replay.jsonl).
+
+### Experiment C: load, deadline, and arrival sensitivity
+
+Three complete repeats at every point produced 1,176 request-level observations. This table shows the burst-size slice at a 400 ms full-response SLO:
+
+| Simultaneous requests | Quality-only SLO success | SLO-aware SLO success | Quality-only median p95 | SLO-aware median p95 | SLO-aware route mix |
+| ---: | ---: | ---: | ---: | ---: | --- |
+| 1 | 100% | 100% | 91.55 ms | 90.06 ms | cheap 1 |
+| 5 | 80% | 100% | 424.37 ms | 347.02 ms | cheap 4 / capacity 1 |
+| 10 | 40% | 100% | 855.54 ms | 345.89 ms | cheap 4 / capacity 6 |
+| 20 | 20% | 100% | 1,583.41 ms | 281.43 ms | cheap 4 / capacity 16 |
+| 40 | 10% | 100% | 3,160.08 ms | 295.60 ms | cheap 4 / capacity 36 |
+
+When requests arrived 80 or 120 ms apart, both policies met the SLO and chose only the cheap backend. The controller therefore bought capacity only when the controlled workload created queue pressure. Run `make experiment-sweeps` to reproduce the isolated [full tables](results/sweep-analysis.md), [raw replay](results/sweep-replay.jsonl), and [decision traces](results/sweep-traces.jsonl).
+
+The [deep research report](research/deep-study/final-report.md) compares these results with RouterBench, RouteLLM, LLMRouterBench, DistServe, vLLM, Kubernetes inference routing, and TypeSafe's Jev guidance. Its verdict is deliberately narrow: the current evidence validates controller mechanics and a Jev integration ablation, not real-model quality, billed savings, or production reliability.
 
 These are controlled integration studies. The simulated backend labels, prices, service times, and quality priors do not predict production savings. Use the benchmark contract below with real endpoints and workload-specific graders before making deployment claims.
 
@@ -112,6 +128,14 @@ make video-demo
 It starts a cheap single-concurrency backend, a higher-cost capacity backend, and the router; replays the same ten-request burst through four policies; then prints and saves the comparison. Across five verification runs, quality-only routing met the 400 ms SLO for 40% of requests, while SLO-aware routing met it for 100% by splitting traffic across both backends. Its predicted cost was 36% lower than routing every request to the stronger tier. See the [experiment analysis](results/video-analysis.md) and [recording walkthrough](VIDEO_WALKTHROUGH.md).
 
 The demo labels use exact match so that the harness is deterministic. Real workloads should replace this with task-specific executable checks, human labels, or a separately validated judge. Do not present the eight-row demo as a model benchmark.
+
+Run the three-factor sensitivity study with a second command:
+
+```sh
+make experiment-sweeps
+```
+
+It starts isolated fixture processes and writes only `sweep-*` artifacts, so it cannot append to the video traces.
 
 ### Use live Jev
 
@@ -199,6 +223,8 @@ The replay output is one JSONL record per request. Router traces add the candida
 - `results/video-analysis.md`: repeated burst experiment, results, and limitations.
 - `results/live-jev-analysis.md`: measured OpenRouter integration result and conclusion.
 - `results/live-jev-*.jsonl`: replay and trace evidence behind the report.
+- `results/sweep-analysis.md`: three-repeat load, SLO-target, and arrival-pattern tables.
+- `research/deep-study/final-report.md`: literature-grounded experiment design, evidence audit, results, and release gates.
 
 ## Known ceilings
 

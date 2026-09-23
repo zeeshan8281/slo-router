@@ -1,0 +1,1904 @@
+[
+  {
+    "experiment": "load",
+    "value": 1,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 1,
+    "completed": 1,
+    "scored": 1,
+    "accuracy": 1.0,
+    "correct_in_slo": 1,
+    "slo_success_rate": 1.0,
+    "p50_ms": 93.06166699999999,
+    "p95_ms": 93.06166699999999,
+    "p99_ms": 93.06166699999999,
+    "predicted_cost_usd": 5.3e-06,
+    "cost_per_correct_in_slo_usd": 5.3e-06,
+    "routes": {
+      "cheap": 1
+    },
+    "feature_sources": {
+      "lexical": 1
+    },
+    "latency_mae_ms": 19.271333000000013
+  },
+  {
+    "experiment": "load",
+    "value": 1,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 1,
+    "completed": 1,
+    "scored": 1,
+    "accuracy": 1.0,
+    "correct_in_slo": 1,
+    "slo_success_rate": 1.0,
+    "p50_ms": 86.14950000000002,
+    "p95_ms": 86.14950000000002,
+    "p99_ms": 86.14950000000002,
+    "predicted_cost_usd": 5.3e-06,
+    "cost_per_correct_in_slo_usd": 5.3e-06,
+    "routes": {
+      "cheap": 1
+    },
+    "feature_sources": {
+      "lexical": 1
+    },
+    "latency_mae_ms": 26.18349999999998
+  },
+  {
+    "experiment": "load",
+    "value": 1,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 1,
+    "completed": 1,
+    "scored": 1,
+    "accuracy": 1.0,
+    "correct_in_slo": 1,
+    "slo_success_rate": 1.0,
+    "p50_ms": 87.249083,
+    "p95_ms": 87.249083,
+    "p99_ms": 87.249083,
+    "predicted_cost_usd": 5.3e-06,
+    "cost_per_correct_in_slo_usd": 5.3e-06,
+    "routes": {
+      "cheap": 1
+    },
+    "feature_sources": {
+      "lexical": 1
+    },
+    "latency_mae_ms": 25.083917
+  },
+  {
+    "experiment": "load",
+    "value": 1,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 1,
+    "completed": 1,
+    "scored": 1,
+    "accuracy": 1.0,
+    "correct_in_slo": 1,
+    "slo_success_rate": 1.0,
+    "p50_ms": 90.058833,
+    "p95_ms": 90.058833,
+    "p99_ms": 90.058833,
+    "predicted_cost_usd": 5.3e-06,
+    "cost_per_correct_in_slo_usd": 5.3e-06,
+    "routes": {
+      "cheap": 1
+    },
+    "feature_sources": {
+      "lexical": 1
+    },
+    "latency_mae_ms": 22.27416699999999
+  },
+  {
+    "experiment": "load",
+    "value": 1,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 1,
+    "completed": 1,
+    "scored": 1,
+    "accuracy": 1.0,
+    "correct_in_slo": 1,
+    "slo_success_rate": 1.0,
+    "p50_ms": 91.54825,
+    "p95_ms": 91.54825,
+    "p99_ms": 91.54825,
+    "predicted_cost_usd": 5.3e-06,
+    "cost_per_correct_in_slo_usd": 5.3e-06,
+    "routes": {
+      "cheap": 1
+    },
+    "feature_sources": {
+      "lexical": 1
+    },
+    "latency_mae_ms": 20.784750000000003
+  },
+  {
+    "experiment": "load",
+    "value": 1,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 1,
+    "completed": 1,
+    "scored": 1,
+    "accuracy": 1.0,
+    "correct_in_slo": 1,
+    "slo_success_rate": 1.0,
+    "p50_ms": 105.10204100000009,
+    "p95_ms": 105.10204100000009,
+    "p99_ms": 105.10204100000009,
+    "predicted_cost_usd": 5.3e-06,
+    "cost_per_correct_in_slo_usd": 5.3e-06,
+    "routes": {
+      "cheap": 1
+    },
+    "feature_sources": {
+      "lexical": 1
+    },
+    "latency_mae_ms": 7.230958999999913
+  },
+  {
+    "experiment": "load",
+    "value": 5,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 5,
+    "completed": 5,
+    "scored": 5,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.8,
+    "p50_ms": 255.06212500000004,
+    "p95_ms": 421.2694160000001,
+    "p99_ms": 421.2694160000001,
+    "predicted_cost_usd": 2.65e-05,
+    "cost_per_correct_in_slo_usd": 6.625e-06,
+    "routes": {
+      "cheap": 5
+    },
+    "feature_sources": {
+      "lexical": 5
+    },
+    "latency_mae_ms": 15.087008199999968
+  },
+  {
+    "experiment": "load",
+    "value": 5,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 5,
+    "completed": 5,
+    "scored": 5,
+    "accuracy": 1.0,
+    "correct_in_slo": 5,
+    "slo_success_rate": 1.0,
+    "p50_ms": 177.8398750000001,
+    "p95_ms": 347.01637500000015,
+    "p99_ms": 347.01637500000015,
+    "predicted_cost_usd": 7.419999999999999e-05,
+    "cost_per_correct_in_slo_usd": 1.4839999999999997e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 1
+    },
+    "feature_sources": {
+      "lexical": 5
+    },
+    "latency_mae_ms": 12.548241799999932
+  },
+  {
+    "experiment": "load",
+    "value": 5,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 5,
+    "completed": 5,
+    "scored": 5,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.8,
+    "p50_ms": 258.87833299999994,
+    "p95_ms": 424.9993339999998,
+    "p99_ms": 424.9993339999998,
+    "predicted_cost_usd": 2.65e-05,
+    "cost_per_correct_in_slo_usd": 6.625e-06,
+    "routes": {
+      "cheap": 5
+    },
+    "feature_sources": {
+      "lexical": 5
+    },
+    "latency_mae_ms": 9.974950000000097
+  },
+  {
+    "experiment": "load",
+    "value": 5,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 5,
+    "completed": 5,
+    "scored": 5,
+    "accuracy": 1.0,
+    "correct_in_slo": 5,
+    "slo_success_rate": 1.0,
+    "p50_ms": 177.85091699999978,
+    "p95_ms": 349.22395800000004,
+    "p99_ms": 349.22395800000004,
+    "predicted_cost_usd": 7.42e-05,
+    "cost_per_correct_in_slo_usd": 1.484e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 1
+    },
+    "feature_sources": {
+      "lexical": 5
+    },
+    "latency_mae_ms": 11.711066599999892
+  },
+  {
+    "experiment": "load",
+    "value": 5,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 5,
+    "completed": 5,
+    "scored": 5,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.8,
+    "p50_ms": 257.9131669999999,
+    "p95_ms": 424.37066599999974,
+    "p99_ms": 424.37066599999974,
+    "predicted_cost_usd": 2.65e-05,
+    "cost_per_correct_in_slo_usd": 6.625e-06,
+    "routes": {
+      "cheap": 5
+    },
+    "feature_sources": {
+      "lexical": 5
+    },
+    "latency_mae_ms": 40.17835800000004
+  },
+  {
+    "experiment": "load",
+    "value": 5,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 5,
+    "completed": 5,
+    "scored": 5,
+    "accuracy": 1.0,
+    "correct_in_slo": 5,
+    "slo_success_rate": 1.0,
+    "p50_ms": 177.76612500000022,
+    "p95_ms": 345.133417,
+    "p99_ms": 345.133417,
+    "predicted_cost_usd": 7.419999999999999e-05,
+    "cost_per_correct_in_slo_usd": 1.4839999999999997e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 1
+    },
+    "feature_sources": {
+      "lexical": 5
+    },
+    "latency_mae_ms": 13.192883
+  },
+  {
+    "experiment": "load",
+    "value": 10,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.4,
+    "p50_ms": 480.1136875000001,
+    "p95_ms": 849.5285829999997,
+    "p99_ms": 849.5285829999997,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 1.325e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 36.49440440000005
+  },
+  {
+    "experiment": "load",
+    "value": 10,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 121.2798334999996,
+    "p95_ms": 345.88675,
+    "p99_ms": 345.88675,
+    "predicted_cost_usd": 0.0003392,
+    "cost_per_correct_in_slo_usd": 3.392e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 6
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 16.923574999999815
+  },
+  {
+    "experiment": "load",
+    "value": 10,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.4,
+    "p50_ms": 476.3454579999999,
+    "p95_ms": 855.5414169999996,
+    "p99_ms": 855.5414169999996,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 1.325e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 86.81805849999995
+  },
+  {
+    "experiment": "load",
+    "value": 10,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 125.09595800000018,
+    "p95_ms": 352.0650830000003,
+    "p99_ms": 352.0650830000003,
+    "predicted_cost_usd": 0.0003392,
+    "cost_per_correct_in_slo_usd": 3.392e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 6
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 18.1556290000002
+  },
+  {
+    "experiment": "load",
+    "value": 10,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.4,
+    "p50_ms": 477.27697950000004,
+    "p95_ms": 859.4784589999999,
+    "p99_ms": 859.4784589999999,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 1.325e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 131.8916626000001
+  },
+  {
+    "experiment": "load",
+    "value": 10,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 117.49862500000008,
+    "p95_ms": 345.01916600000015,
+    "p99_ms": 345.01916600000015,
+    "predicted_cost_usd": 0.00033919999999999995,
+    "cost_per_correct_in_slo_usd": 3.3919999999999994e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 6
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 14.462954399999852
+  },
+  {
+    "experiment": "load",
+    "value": 20,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.2,
+    "p50_ms": 880.8294165000001,
+    "p95_ms": 1582.5557079999992,
+    "p99_ms": 1668.8978750000008,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 2.6499999999999987e-05,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 146.80406880000018
+  },
+  {
+    "experiment": "load",
+    "value": 20,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 128.5635204999993,
+    "p95_ms": 281.4260409999996,
+    "p99_ms": 366.7934580000001,
+    "predicted_cost_usd": 0.0008691999999999999,
+    "cost_per_correct_in_slo_usd": 4.3459999999999994e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 16
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 14.347604200000006
+  },
+  {
+    "experiment": "load",
+    "value": 20,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.2,
+    "p50_ms": 893.4746669999995,
+    "p95_ms": 1589.270333,
+    "p99_ms": 1677.7411670000006,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 2.6499999999999987e-05,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 21.232429299999993
+  },
+  {
+    "experiment": "load",
+    "value": 20,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 129.68291650000018,
+    "p95_ms": 282.0749589999991,
+    "p99_ms": 367.3845829999998,
+    "predicted_cost_usd": 0.0008691999999999999,
+    "cost_per_correct_in_slo_usd": 4.3459999999999994e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 16
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 15.315333250000121
+  },
+  {
+    "experiment": "load",
+    "value": 20,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.2,
+    "p50_ms": 891.523770500001,
+    "p95_ms": 1583.4122080000004,
+    "p99_ms": 1679.944958,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 2.6499999999999987e-05,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 20.19410630000011
+  },
+  {
+    "experiment": "load",
+    "value": 20,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 129.8351250000014,
+    "p95_ms": 280.93554199999994,
+    "p99_ms": 365.9900839999999,
+    "predicted_cost_usd": 0.0008692,
+    "cost_per_correct_in_slo_usd": 4.346e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 16
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 15.34312094999993
+  },
+  {
+    "experiment": "load",
+    "value": 40,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 40,
+    "completed": 40,
+    "scored": 40,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.1,
+    "p50_ms": 1710.4416250000004,
+    "p95_ms": 3155.9333330000018,
+    "p99_ms": 3339.5269579999986,
+    "predicted_cost_usd": 0.0002119999999999998,
+    "cost_per_correct_in_slo_usd": 5.299999999999995e-05,
+    "routes": {
+      "cheap": 40
+    },
+    "feature_sources": {
+      "lexical": 40
+    },
+    "latency_mae_ms": 44.92171772499997
+  },
+  {
+    "experiment": "load",
+    "value": 40,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 40,
+    "completed": 40,
+    "scored": 40,
+    "accuracy": 1.0,
+    "correct_in_slo": 40,
+    "slo_success_rate": 1.0,
+    "p50_ms": 193.60093749999942,
+    "p95_ms": 294.6405409999997,
+    "p99_ms": 376.731165999999,
+    "predicted_cost_usd": 0.0019292000000000014,
+    "cost_per_correct_in_slo_usd": 4.823000000000003e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 36
+    },
+    "feature_sources": {
+      "lexical": 40
+    },
+    "latency_mae_ms": 29.30718330000011
+  },
+  {
+    "experiment": "load",
+    "value": 40,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 40,
+    "completed": 40,
+    "scored": 40,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.1,
+    "p50_ms": 1709.1241250000007,
+    "p95_ms": 3160.0754580000016,
+    "p99_ms": 3323.5248330000004,
+    "predicted_cost_usd": 0.0002119999999999998,
+    "cost_per_correct_in_slo_usd": 5.299999999999995e-05,
+    "routes": {
+      "cheap": 40
+    },
+    "feature_sources": {
+      "lexical": 40
+    },
+    "latency_mae_ms": 43.10721565000017
+  },
+  {
+    "experiment": "load",
+    "value": 40,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 40,
+    "completed": 40,
+    "scored": 40,
+    "accuracy": 1.0,
+    "correct_in_slo": 40,
+    "slo_success_rate": 1.0,
+    "p50_ms": 194.08195849999998,
+    "p95_ms": 298.1392920000019,
+    "p99_ms": 379.7216669999983,
+    "predicted_cost_usd": 0.0019292000000000014,
+    "cost_per_correct_in_slo_usd": 4.823000000000003e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 36
+    },
+    "feature_sources": {
+      "lexical": 40
+    },
+    "latency_mae_ms": 27.541957274999866
+  },
+  {
+    "experiment": "load",
+    "value": 40,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 40,
+    "completed": 40,
+    "scored": 40,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.1,
+    "p50_ms": 1709.1078750000008,
+    "p95_ms": 3179.8031249999995,
+    "p99_ms": 3323.7392910000026,
+    "predicted_cost_usd": 0.0002119999999999998,
+    "cost_per_correct_in_slo_usd": 5.299999999999995e-05,
+    "routes": {
+      "cheap": 40
+    },
+    "feature_sources": {
+      "lexical": 40
+    },
+    "latency_mae_ms": 50.972293699999796
+  },
+  {
+    "experiment": "load",
+    "value": 40,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 40,
+    "completed": 40,
+    "scored": 40,
+    "accuracy": 1.0,
+    "correct_in_slo": 40,
+    "slo_success_rate": 1.0,
+    "p50_ms": 196.06291700000077,
+    "p95_ms": 295.5976669999991,
+    "p99_ms": 373.2000829999969,
+    "predicted_cost_usd": 0.0019292000000000014,
+    "cost_per_correct_in_slo_usd": 4.823000000000003e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 36
+    },
+    "feature_sources": {
+      "lexical": 40
+    },
+    "latency_mae_ms": 27.858354224999605
+  },
+  {
+    "experiment": "slo",
+    "value": 150,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 1,
+    "slo_success_rate": 0.1,
+    "p50_ms": 469.77202100000073,
+    "p95_ms": 841.6072500000028,
+    "p99_ms": 841.6072500000028,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 5.3e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 7.57109979999984
+  },
+  {
+    "experiment": "slo",
+    "value": 150,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 121.14477050000083,
+    "p95_ms": 131.38283299999998,
+    "p99_ms": 131.38283299999998,
+    "predicted_cost_usd": 0.00048229999999999996,
+    "cost_per_correct_in_slo_usd": 4.823e-05,
+    "routes": {
+      "cheap": 1,
+      "fast-capacity": 9
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 18.888054100000126
+  },
+  {
+    "experiment": "slo",
+    "value": 150,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 1,
+    "slo_success_rate": 0.1,
+    "p50_ms": 469.2444164999987,
+    "p95_ms": 840.8096659999984,
+    "p99_ms": 840.8096659999984,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 5.3e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 7.606208199999651
+  },
+  {
+    "experiment": "slo",
+    "value": 150,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 118.05114549999907,
+    "p95_ms": 127.76570900000195,
+    "p99_ms": 127.76570900000195,
+    "predicted_cost_usd": 0.00048229999999999996,
+    "cost_per_correct_in_slo_usd": 4.823e-05,
+    "routes": {
+      "cheap": 1,
+      "fast-capacity": 9
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 15.515583199999645
+  },
+  {
+    "experiment": "slo",
+    "value": 150,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 1,
+    "slo_success_rate": 0.1,
+    "p50_ms": 471.3232914999992,
+    "p95_ms": 842.9273749999986,
+    "p99_ms": 842.9273749999986,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 5.3e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 7.728674999999197
+  },
+  {
+    "experiment": "slo",
+    "value": 150,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 123.9788750000006,
+    "p95_ms": 133.51629199999948,
+    "p99_ms": 133.51629199999948,
+    "predicted_cost_usd": 0.00048229999999999996,
+    "cost_per_correct_in_slo_usd": 4.823e-05,
+    "routes": {
+      "cheap": 1,
+      "fast-capacity": 9
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 21.421324999999833
+  },
+  {
+    "experiment": "slo",
+    "value": 250,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 2,
+    "slo_success_rate": 0.2,
+    "p50_ms": 468.7457705,
+    "p95_ms": 842.0407919999989,
+    "p99_ms": 842.0407919999989,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 2.65e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 7.5785960000001324
+  },
+  {
+    "experiment": "slo",
+    "value": 250,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 120.24168750000008,
+    "p95_ms": 208.97695800000093,
+    "p99_ms": 208.97695800000093,
+    "predicted_cost_usd": 0.00043459999999999994,
+    "cost_per_correct_in_slo_usd": 4.3459999999999994e-05,
+    "routes": {
+      "cheap": 2,
+      "fast-capacity": 8
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 19.11038330000007
+  },
+  {
+    "experiment": "slo",
+    "value": 250,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 2,
+    "slo_success_rate": 0.2,
+    "p50_ms": 478.0511454999985,
+    "p95_ms": 846.7081659999991,
+    "p99_ms": 846.7081659999991,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 2.65e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 7.075962299999992
+  },
+  {
+    "experiment": "slo",
+    "value": 250,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 123.68929149999808,
+    "p95_ms": 195.28087499999813,
+    "p99_ms": 195.28087499999813,
+    "predicted_cost_usd": 0.0004346,
+    "cost_per_correct_in_slo_usd": 4.346e-05,
+    "routes": {
+      "cheap": 2,
+      "fast-capacity": 8
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 20.067249899998988
+  },
+  {
+    "experiment": "slo",
+    "value": 250,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 2,
+    "slo_success_rate": 0.2,
+    "p50_ms": 473.9167705000025,
+    "p95_ms": 848.6742919999983,
+    "p99_ms": 848.6742919999983,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 2.65e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 34.34057069999912
+  },
+  {
+    "experiment": "slo",
+    "value": 250,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 123.60914549999968,
+    "p95_ms": 198.02720799999918,
+    "p99_ms": 198.02720799999918,
+    "predicted_cost_usd": 0.0004346,
+    "cost_per_correct_in_slo_usd": 4.346e-05,
+    "routes": {
+      "cheap": 2,
+      "fast-capacity": 8
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 19.966379000000078
+  },
+  {
+    "experiment": "slo",
+    "value": 400,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.4,
+    "p50_ms": 477.93929199999855,
+    "p95_ms": 850.1094580000022,
+    "p99_ms": 850.1094580000022,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 1.325e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 19.755437499999182
+  },
+  {
+    "experiment": "slo",
+    "value": 400,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 130.19552149999924,
+    "p95_ms": 359.4801249999975,
+    "p99_ms": 359.4801249999975,
+    "predicted_cost_usd": 0.00033919999999999995,
+    "cost_per_correct_in_slo_usd": 3.3919999999999994e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 6
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 23.754791699998854
+  },
+  {
+    "experiment": "slo",
+    "value": 400,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.4,
+    "p50_ms": 470.51110450000164,
+    "p95_ms": 844.2842500000012,
+    "p99_ms": 844.2842500000012,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 1.325e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 38.19206259999995
+  },
+  {
+    "experiment": "slo",
+    "value": 400,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 127.67537499999904,
+    "p95_ms": 358.0719590000001,
+    "p99_ms": 358.0719590000001,
+    "predicted_cost_usd": 0.0003392,
+    "cost_per_correct_in_slo_usd": 3.392e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 6
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 20.745754200000242
+  },
+  {
+    "experiment": "slo",
+    "value": 400,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.4,
+    "p50_ms": 471.4197294999991,
+    "p95_ms": 844.448333999999,
+    "p99_ms": 844.448333999999,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 1.325e-05,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 5.946312499999351
+  },
+  {
+    "experiment": "slo",
+    "value": 400,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 127.13102100000029,
+    "p95_ms": 364.96550000000383,
+    "p99_ms": 364.96550000000383,
+    "predicted_cost_usd": 0.00033919999999999995,
+    "cost_per_correct_in_slo_usd": 3.3919999999999994e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 6
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 36.22010430000094
+  },
+  {
+    "experiment": "slo",
+    "value": 800,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 9,
+    "slo_success_rate": 0.9,
+    "p50_ms": 474.61227100000156,
+    "p95_ms": 838.448250000006,
+    "p99_ms": 838.448250000006,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 5.888888888888889e-06,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 21.480304000001023
+  },
+  {
+    "experiment": "slo",
+    "value": 800,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 385.08006249999835,
+    "p95_ms": 747.3585420000006,
+    "p99_ms": 747.3585420000006,
+    "predicted_cost_usd": 0.00010069999999999995,
+    "cost_per_correct_in_slo_usd": 1.0069999999999995e-05,
+    "routes": {
+      "cheap": 9,
+      "fast-capacity": 1
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 88.59459569999925
+  },
+  {
+    "experiment": "slo",
+    "value": 800,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 9,
+    "slo_success_rate": 0.9,
+    "p50_ms": 467.6355205,
+    "p95_ms": 841.9372079999973,
+    "p99_ms": 841.9372079999973,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 5.888888888888889e-06,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 7.82336659999994
+  },
+  {
+    "experiment": "slo",
+    "value": 800,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 399.60831249999984,
+    "p95_ms": 768.0189159999954,
+    "p99_ms": 768.0189159999954,
+    "predicted_cost_usd": 0.00010069999999999995,
+    "cost_per_correct_in_slo_usd": 1.0069999999999995e-05,
+    "routes": {
+      "cheap": 9,
+      "fast-capacity": 1
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 115.3017371999984
+  },
+  {
+    "experiment": "slo",
+    "value": 800,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 9,
+    "slo_success_rate": 0.9,
+    "p50_ms": 467.3417294999957,
+    "p95_ms": 840.028832999998,
+    "p99_ms": 840.028832999998,
+    "predicted_cost_usd": 5.3e-05,
+    "cost_per_correct_in_slo_usd": 5.888888888888889e-06,
+    "routes": {
+      "cheap": 10
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 9.021500000000435
+  },
+  {
+    "experiment": "slo",
+    "value": 800,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 10,
+    "completed": 10,
+    "scored": 10,
+    "accuracy": 1.0,
+    "correct_in_slo": 10,
+    "slo_success_rate": 1.0,
+    "p50_ms": 399.9577914999968,
+    "p95_ms": 767.1910410000038,
+    "p99_ms": 767.1910410000038,
+    "predicted_cost_usd": 0.00010069999999999995,
+    "cost_per_correct_in_slo_usd": 1.0069999999999995e-05,
+    "routes": {
+      "cheap": 9,
+      "fast-capacity": 1
+    },
+    "feature_sources": {
+      "lexical": 10
+    },
+    "latency_mae_ms": 87.60952060000048
+  },
+  {
+    "experiment": "arrival",
+    "value": 0,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.2,
+    "p50_ms": 881.4140414999977,
+    "p95_ms": 1585.3411659999992,
+    "p99_ms": 1672.5784160000003,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 2.6499999999999987e-05,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 20.72393534999894
+  },
+  {
+    "experiment": "arrival",
+    "value": 0,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 129.04162500000282,
+    "p95_ms": 283.40004100000016,
+    "p99_ms": 364.4827090000007,
+    "predicted_cost_usd": 0.0008691999999999998,
+    "cost_per_correct_in_slo_usd": 4.345999999999999e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 16
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 15.213439499998648
+  },
+  {
+    "experiment": "arrival",
+    "value": 0,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.2,
+    "p50_ms": 894.0348129999975,
+    "p95_ms": 1590.8941669999947,
+    "p99_ms": 1681.8444580000005,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 2.6499999999999987e-05,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 18.296504249999437
+  },
+  {
+    "experiment": "arrival",
+    "value": 0,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 130.64381250000068,
+    "p95_ms": 283.88262500000394,
+    "p99_ms": 368.80016599999976,
+    "predicted_cost_usd": 0.0008691999999999999,
+    "cost_per_correct_in_slo_usd": 4.3459999999999994e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 16
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 15.881023000000322
+  },
+  {
+    "experiment": "arrival",
+    "value": 0,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 4,
+    "slo_success_rate": 0.2,
+    "p50_ms": 895.178687499996,
+    "p95_ms": 1594.1224580000012,
+    "p99_ms": 1683.7787919999982,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 2.6499999999999987e-05,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 20.10820830000032
+  },
+  {
+    "experiment": "arrival",
+    "value": 0,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 127.84272949999931,
+    "p95_ms": 281.42875000000345,
+    "p99_ms": 366.84329199999866,
+    "predicted_cost_usd": 0.0008691999999999999,
+    "cost_per_correct_in_slo_usd": 4.3459999999999994e-05,
+    "routes": {
+      "cheap": 4,
+      "fast-capacity": 16
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 13.897777049999544
+  },
+  {
+    "experiment": "arrival",
+    "value": 40,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 8,
+    "slo_success_rate": 0.4,
+    "p50_ms": 493.19658350000145,
+    "p95_ms": 854.3794169999969,
+    "p99_ms": 902.1753749999988,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 1.3249999999999993e-05,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 54.72553539999983
+  },
+  {
+    "experiment": "arrival",
+    "value": 40,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 211.2472295000032,
+    "p95_ms": 336.08958300000324,
+    "p99_ms": 340.19045799999503,
+    "predicted_cost_usd": 0.00043990000000000007,
+    "cost_per_correct_in_slo_usd": 2.1995000000000002e-05,
+    "routes": {
+      "cheap": 13,
+      "fast-capacity": 7
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 22.360749949999914
+  },
+  {
+    "experiment": "arrival",
+    "value": 40,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 8,
+    "slo_success_rate": 0.4,
+    "p50_ms": 502.7599579999986,
+    "p95_ms": 862.8367090000069,
+    "p99_ms": 913.5699159999931,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 1.3249999999999993e-05,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 46.09607290000015
+  },
+  {
+    "experiment": "arrival",
+    "value": 40,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 209.8318125000027,
+    "p95_ms": 335.2711659999983,
+    "p99_ms": 338.6483339999984,
+    "predicted_cost_usd": 0.00043990000000000007,
+    "cost_per_correct_in_slo_usd": 2.1995000000000002e-05,
+    "routes": {
+      "cheap": 13,
+      "fast-capacity": 7
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 23.5507209000002
+  },
+  {
+    "experiment": "arrival",
+    "value": 40,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 8,
+    "slo_success_rate": 0.4,
+    "p50_ms": 505.5332919999991,
+    "p95_ms": 864.3086669999959,
+    "p99_ms": 914.9102499999983,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 1.3249999999999993e-05,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 45.329708300000036
+  },
+  {
+    "experiment": "arrival",
+    "value": 40,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 209.85283299999935,
+    "p95_ms": 330.0565840000047,
+    "p99_ms": 334.1589589999998,
+    "predicted_cost_usd": 0.00043990000000000007,
+    "cost_per_correct_in_slo_usd": 2.1995000000000002e-05,
+    "routes": {
+      "cheap": 13,
+      "fast-capacity": 7
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 25.211987500000944
+  },
+  {
+    "experiment": "arrival",
+    "value": 80,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 118.75597899999946,
+    "p95_ms": 140.41100000000029,
+    "p99_ms": 143.96650000000477,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 69.6186397000008
+  },
+  {
+    "experiment": "arrival",
+    "value": 80,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 116.45768749999874,
+    "p95_ms": 138.87087500000206,
+    "p99_ms": 143.01304199999976,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 71.64744794999996
+  },
+  {
+    "experiment": "arrival",
+    "value": 80,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 115.64231250000034,
+    "p95_ms": 140.5069999999995,
+    "p99_ms": 148.16537500000493,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 70.53491650000004
+  },
+  {
+    "experiment": "arrival",
+    "value": 80,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 125.69729200000168,
+    "p95_ms": 147.0210829999985,
+    "p99_ms": 155.56204199999968,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 63.74938324999944
+  },
+  {
+    "experiment": "arrival",
+    "value": 80,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 114.06397900000087,
+    "p95_ms": 142.14116699999835,
+    "p99_ms": 146.7057500000024,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 71.3141582499989
+  },
+  {
+    "experiment": "arrival",
+    "value": 80,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 123.91108300000298,
+    "p95_ms": 142.92354200000545,
+    "p99_ms": 150.26920799999743,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 66.15104379999961
+  },
+  {
+    "experiment": "arrival",
+    "value": 120,
+    "repeat": 1,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 95.79439600000228,
+    "p95_ms": 98.0317079999935,
+    "p99_ms": 98.11229199999616,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 17.199997949999783
+  },
+  {
+    "experiment": "arrival",
+    "value": 120,
+    "repeat": 1,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 94.42060400000685,
+    "p95_ms": 98.95395799999562,
+    "p99_ms": 101.11983400000213,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 17.77086854999908
+  },
+  {
+    "experiment": "arrival",
+    "value": 120,
+    "repeat": 2,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 94.44662549999805,
+    "p95_ms": 97.14404199999649,
+    "p99_ms": 98.62691600000062,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 18.421002050002215
+  },
+  {
+    "experiment": "arrival",
+    "value": 120,
+    "repeat": 2,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 95.13816649999995,
+    "p95_ms": 98.39945800000294,
+    "p99_ms": 99.26354200000276,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 17.485954299999378
+  },
+  {
+    "experiment": "arrival",
+    "value": 120,
+    "repeat": 3,
+    "policy": "quality_only",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 94.75416649999602,
+    "p95_ms": 97.71708300000626,
+    "p99_ms": 98.06599999998866,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 17.542845849999793
+  },
+  {
+    "experiment": "arrival",
+    "value": 120,
+    "repeat": 3,
+    "policy": "slo_no_jev",
+    "requests": 20,
+    "completed": 20,
+    "scored": 20,
+    "accuracy": 1.0,
+    "correct_in_slo": 20,
+    "slo_success_rate": 1.0,
+    "p50_ms": 93.77239549999672,
+    "p95_ms": 95.71829200000082,
+    "p99_ms": 99.23733300000492,
+    "predicted_cost_usd": 0.00010599999999999995,
+    "cost_per_correct_in_slo_usd": 5.2999999999999975e-06,
+    "routes": {
+      "cheap": 20
+    },
+    "feature_sources": {
+      "lexical": 20
+    },
+    "latency_mae_ms": 19.095849949998893
+  }
+]

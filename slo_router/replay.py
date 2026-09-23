@@ -32,6 +32,8 @@ async def run_case(client: httpx.AsyncClient, base_url: str, row: Dict[str, Any]
         elapsed = (time.perf_counter() - started) * 1000
         result = {"index": index, "policy": policy, "status": response.status_code, "latency_ms": elapsed,
                   "route": response.headers.get("X-SLO-Route"), "slo_met": elapsed <= row.get("slo_ms", 10000),
+                  "predicted_latency_ms": float(response.headers.get("X-SLO-Predicted-Latency-Ms", "nan")),
+                  "predicted_quality": float(response.headers.get("X-SLO-Predicted-Quality", "nan")),
                   "predicted_cost_usd": float(response.headers.get("X-SLO-Predicted-Cost-Usd", "nan")),
                   "feature_source": response.headers.get("X-SLO-Feature-Source")}
         if response.is_success:
