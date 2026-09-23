@@ -1,0 +1,37 @@
+{
+  "backends": [
+    {
+      "name": "cheap",
+      "url": "http://127.0.0.1:8101",
+      "model": "cheap-model",
+      "input_per_million": 0.10,
+      "output_per_million": 0.20,
+      "max_context_tokens": 8192,
+      "prefill_tokens_per_second": 3000,
+      "decode_tokens_per_second": 100,
+      "base_latency_ms": 20,
+      "metrics_url": "http://127.0.0.1:8101/metrics",
+      "quality": {"extraction": 0.92, "summarization": 0.87, "reasoning": 0.62, "code_debugging": 0.51, "other": 0.70}
+    },
+    {
+      "name": "fast-capacity",
+      "url": "http://127.0.0.1:8102",
+      "model": "capacity-model",
+      "input_per_million": 1.0,
+      "output_per_million": 2.0,
+      "max_context_tokens": 32768,
+      "prefill_tokens_per_second": 6000,
+      "decode_tokens_per_second": 2000,
+      "base_latency_ms": 75,
+      "metrics_url": "http://127.0.0.1:8102/metrics",
+      "quality": {"extraction": 0.98, "summarization": 0.97, "reasoning": 0.91, "code_debugging": 0.93, "other": 0.90}
+    }
+  ],
+  "default_slo_ms": 400,
+  "default_quality_floor": 0.70,
+  "slo_success_floor": 0.50,
+  "jev_timeout_ms": 700,
+  "jev_input_per_million": 0.042,
+  "jev_cache_ttl_seconds": 300,
+  "trace_path": "results/video-traces.jsonl"
+}

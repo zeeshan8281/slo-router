@@ -23,6 +23,11 @@ ANSWERS = {
 
 def create_app(tier: str = "fast") -> FastAPI:
     app = FastAPI(title="SLO Router simulated " + tier)
+    latency_seconds = float(os.environ.get("SLO_SIM_LATENCY_MS", "25" if tier == "fast" else "65")) / 1000
+    capacity = int(os.environ.get("SLO_SIM_CONCURRENCY", "1000"))
+    if latency_seconds < 0 or capacity < 1:
+        raise ValueError("simulator latency must be non-negative and concurrency must be positive")
+    slots = asyncio.Semaphore(capacity)
     active = 0
     waiting = 0
 
@@ -38,7 +43,7 @@ def create_app(tier: str = "fast") -> FastAPI:
     async def completion(body: Dict[str, Any]):
         nonlocal active, waiting
         waiting += 1
-        await asyncio.sleep(0)
+        await slots.acquire()
         waiting -= 1
         active += 1
         try:
@@ -46,7 +51,7 @@ def create_app(tier: str = "fast") -> FastAPI:
             answer = ANSWERS.get(prompt, "unknown")
             if tier == "fast" and ("CUDA" in prompt or "cache key" in prompt or "9*7" in prompt):
                 answer = "I am not sure."
-            await asyncio.sleep(0.025 if tier == "fast" else 0.065)
+            await asyncio.sleep(latency_seconds)
             response = {
                 "id": "sim-" + str(time.time_ns()), "object": "chat.completion", "model": tier,
                 "choices": [{"index": 0, "message": {"role": "assistant", "content": answer}, "finish_reason": "stop"}],
@@ -63,6 +68,7 @@ def create_app(tier: str = "fast") -> FastAPI:
             return StreamingResponse(events(), media_type="text/event-stream")
         finally:
             active -= 1
+            slots.release()
 
     return app
 

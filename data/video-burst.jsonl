@@ -1,0 +1,10 @@
+{"arrival_ms":0,"messages":[{"role":"user","content":"Extract the color from: the car is blue."}],"reference":"blue","max_tokens":8,"slo_ms":400}
+{"arrival_ms":0,"messages":[{"role":"user","content":"Extract the city from: Bob lives in Rome."}],"reference":"Rome","max_tokens":8,"slo_ms":400}
+{"arrival_ms":0,"messages":[{"role":"user","content":"Extract the color from: the car is blue."}],"reference":"blue","max_tokens":8,"slo_ms":400}
+{"arrival_ms":0,"messages":[{"role":"user","content":"Extract the city from: Bob lives in Rome."}],"reference":"Rome","max_tokens":8,"slo_ms":400}
+{"arrival_ms":0,"messages":[{"role":"user","content":"Extract the color from: the car is blue."}],"reference":"blue","max_tokens":8,"slo_ms":400}
+{"arrival_ms":0,"messages":[{"role":"user","content":"Extract the city from: Bob lives in Rome."}],"reference":"Rome","max_tokens":8,"slo_ms":400}
+{"arrival_ms":0,"messages":[{"role":"user","content":"Extract the color from: the car is blue."}],"reference":"blue","max_tokens":8,"slo_ms":400}
+{"arrival_ms":0,"messages":[{"role":"user","content":"Extract the city from: Bob lives in Rome."}],"reference":"Rome","max_tokens":8,"slo_ms":400}
+{"arrival_ms":0,"messages":[{"role":"user","content":"Extract the color from: the car is blue."}],"reference":"blue","max_tokens":8,"slo_ms":400}
+{"arrival_ms":0,"messages":[{"role":"user","content":"Extract the city from: Bob lives in Rome."}],"reference":"Rome","max_tokens":8,"slo_ms":400}

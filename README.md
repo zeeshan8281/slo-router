@@ -74,6 +74,16 @@ python3 -m slo_router.replay data/demo.jsonl --router-key demo --output replay-r
 python3 -m slo_router.report replay-results.jsonl
 ```
 
+### Reproduce the burst-load video experiment
+
+Run the complete deterministic experiment with one command:
+
+```sh
+make video-demo
+```
+
+It starts a cheap single-concurrency backend, a higher-cost capacity backend, and the router; replays the same ten-request burst through four policies; then prints and saves the comparison. Across five verification runs, quality-only routing met the 400 ms SLO for 40% of requests, while SLO-aware routing met it for 100% by splitting traffic across both backends. Its predicted cost was 36% lower than routing every request to the stronger tier. See the [experiment analysis](results/video-analysis.md) and [recording walkthrough](VIDEO_WALKTHROUGH.md).
+
 The demo labels use exact match so that the harness is deterministic. Real workloads should replace this with task-specific executable checks, human labels, or a separately validated judge. Do not present the eight-row demo as a model benchmark.
 
 ### Use live Jev

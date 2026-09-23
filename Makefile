@@ -1,4 +1,4 @@
-.PHONY: test sim-fast sim-strong serve matrix fit replay report
+.PHONY: test sim-fast sim-strong serve matrix fit replay report video-demo
 
 test:
 	python3 -m pytest -q
@@ -23,3 +23,6 @@ replay:
 
 report:
 	python3 -m slo_router.report replay-results.jsonl
+
+video-demo:
+	./scripts/video-demo.sh
