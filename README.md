@@ -15,9 +15,36 @@ SLO Router is an OpenAI-compatible proxy that chooses an LLM backend using reque
 
 The repository is standalone. The bundled simulated backends let the complete proxy, trace, counterfactual collection, and replay paths run without GPUs or paid API keys. Replace them with vLLM or any OpenAI-compatible endpoints for a real experiment.
 
-The checked-in [live Jev analysis](results/live-jev-analysis.md) records a real OpenRouter Decisions run against the deterministic backend fixture, including latency, cost, semantic disagreements, and cache behavior.
+## Experimental results
 
-> **Measured result:** Jev preserved the same routes and accuracy as the local feature path on the bundled fixture, but increased p95 end-to-end latency from **77.93 ms to 490.38 ms**. The repository keeps both implementations so the decision can be repeated on real workloads instead of assumed.
+### Experiment A: burst-load SLO routing
+
+Ten labeled extraction requests arrive simultaneously with a 400 ms SLO. The cheap backend has one execution slot; the higher-cost capacity backend has sixteen. Both return identical correct answers, isolating queue-aware routing from model-quality differences. Five independent runs produced the same route distribution and SLO-success rate.
+
+| Policy | Accuracy | SLO success | Median p95 across 5 runs | Predicted cost | Route distribution |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Fixed cheapest | 100% | 40% | 833.69 ms | $0.0000530 | cheap 10 |
+| Fixed strongest | 100% | 100% | 112.78 ms | $0.0005300 | capacity 10 |
+| Quality only | 100% | 40% | 827.90 ms | $0.0000530 | cheap 10 |
+| **SLO-aware** | **100%** | **100%** | **341.91 ms** | **$0.0003392** | cheap 4 / capacity 6 |
+
+SLO-aware routing increased deadline success from 40% to 100% while costing 36% less than sending every request to the stronger tier. Reproduce it with `make video-demo`; the [analysis](results/video-analysis.md), [request-level replay](results/video-replay.jsonl), [prompt-free traces](results/video-traces.jsonl), and [SVG report](results/video-results.svg) are checked in.
+
+### Experiment B: live Jev ablation
+
+Eight labeled requests were replayed through the real OpenRouter Decisions endpoint using `typesafe/jev-1.13`, with deterministic local completion backends. This measures Jev integration overhead and routing effects; it does not claim real-model quality.
+
+| Policy | Feature path | Accuracy | p50 end-to-end | p95 end-to-end | Predicted cost | Routes |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| Fixed cheapest | Local | 62.5% | 28.58 ms | 35.64 ms | $0.00013140 | fast 8 |
+| Fixed strongest | Local | 100% | 69.23 ms | 69.47 ms | $0.00131400 | strong 8 |
+| Quality only | Live Jev | 100% | 777.64 ms | 1296.30 ms | $0.00086016 | fast 4 / strong 4 |
+| **SLO-aware, no Jev** | **Local** | **100%** | **56.10 ms** | **77.93 ms** | **$0.00071190** | fast 4 / strong 4 |
+| SLO-aware + Jev | Live Jev | 100% | 436.99 ms | 490.38 ms | $0.00086016 | fast 4 / strong 4 |
+
+All 16 Jev decision calls succeeded without lexical fallback, but Jev did not change a route on this fixture and increased SLO-aware p95 latency by about 6.3×. The measured production baseline is therefore local SLO routing; synchronous Jev remains experimental until a real workload shows a quality gain large enough to justify its latency. See the [full live Jev analysis](results/live-jev-analysis.md) and [raw replay](results/live-jev-replay.jsonl).
+
+These are controlled integration studies. The simulated backend labels, prices, service times, and quality priors do not predict production savings. Use the benchmark contract below with real endpoints and workload-specific graders before making deployment claims.
 
 ## What this repository contributes
 
@@ -167,7 +194,9 @@ The replay output is one JSONL record per request. Router traces add the candida
 - `slo_router/report.py`: dependency-free Markdown and SVG policy comparison.
 - `slo_router/sim_backend.py`: deterministic local verification backends.
 - `data/demo.jsonl`: tiny executable fixture, not research evidence.
+- `data/video-burst.jsonl`: fixed burst-load fixture used by the recorded experiment.
 - `diagrams/slo-router-architecture.excalidraw`: editable system architecture.
+- `results/video-analysis.md`: repeated burst experiment, results, and limitations.
 - `results/live-jev-analysis.md`: measured OpenRouter integration result and conclusion.
 - `results/live-jev-*.jsonl`: replay and trace evidence behind the report.
 
